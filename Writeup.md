@@ -59,7 +59,7 @@ signs data set:
 
 The code for this step is contained in the third code cell of the IPython notebook.  
 
-Here is an exploratory visualization of the data set. I kept it simple and I'm simply choosing a random image on the training set and plotting into the view alongside that image classification label. 
+I kept it simple and I'm simply choosing a random image on the training set and plotting into the view alongside that image classification label. 
 
 ###Design and Test a Model Architecture
 
