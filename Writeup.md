@@ -89,7 +89,7 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 Gray image   							| 
+| Input         		| 32x32x1 Gray, normalized image   							| 
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 30x30x9 	|
 | RELU					|												|
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 28x28x18 	|
