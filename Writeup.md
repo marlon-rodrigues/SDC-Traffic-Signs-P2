@@ -154,7 +154,7 @@ I believe the most important design choices for this model are the use of convol
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-I decided to push the model a little further and I chose thirteen differnt images to test on it. Here are thirteen German traffic signs that I found on the web:
+I decided to push the model a little further and I chose thirteen different images to test on it. Here are thirteen German traffic signs that I found on the web:
 
 ![alt text][image2] ![alt text][image3] ![alt text][image4] 
 ![alt text][image5] ![alt text][image6] ![alt text][image7]
