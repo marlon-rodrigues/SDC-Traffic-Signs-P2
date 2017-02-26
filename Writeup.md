@@ -216,6 +216,7 @@ For the 3rd image, the model is not so sure that this is a "Roundabout" sign (pr
 | 0.04620901      			| End of all speed and passing limits					 				|
 | 0.04555641				    | Go straight or left      							|
 
+
 For the 4rd image, the model is not so sure  that this is a "Turn Left Ahead" sign (probability of 9.99989390e-01), but the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
@@ -236,6 +237,7 @@ For the 5th image, the model is relatively sure that this is a "No Entry" sign (
 | 8.06210130e-21				| Roundabout mandatory									|
 | 6.12447941e-23      			| No passing for vehicles over 3.5 metric tons					 				|
 | 5.98182693e-24				    | Turn left ahead     							|
+
 
 For the 6th image, the model is relatively sure that this is a "Wild Animals Crossing" sign (probability of 1.0), and the image does contain a "Wild Animals Crossing" sign. The top five soft max probabilities were
 
@@ -280,6 +282,7 @@ For the 9th image, the model is very sure that this is a "Yield" sign (probabili
 | 0     			| 50 km/h					 				|
 | 0				    | 60 km/h   							|
 
+
 For the 10th image, the model is relatively sure that this is a "No Passing" sign (probability of 1.0), and the image does contain a "No Passing" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
@@ -301,6 +304,7 @@ For the 11th image, the model is very sure that this is a "Turn Right Ahead" sig
 | 0     			| 50 km/h					 				|
 | 0				    | 60 km/h   							|
 
+
 For the 12th image, the model is not so sure  that this is a "70 km/h" sign (probability of 9.99993682e-01), but the image does contain a "70 km/h" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
@@ -310,3 +314,14 @@ For the 12th image, the model is not so sure  that this is a "70 km/h" sign (pro
 | 1.57752686e-06				| 20 km/h									|
 | 6.73609179e-07      			| 120 km/h					 				|
 | 1.52378234e-07				    | 80 km/h      							|
+
+
+For the 13th image, the model is not so sure  that this is a "120 km/h" sign (probability of 9.91708457e-01), but the image does contain a "120 km/h" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.91708457e-01         			| 120 km/h							| 
+| 5.52987820e-03     				| 20 km/h 										|
+| 1.24148233e-03				| Bicycles crossing									|
+| 6.14862889e-04      			| 100 km/h					 				|
+| 4.73920052e-04				    | 70 km/h      							|
