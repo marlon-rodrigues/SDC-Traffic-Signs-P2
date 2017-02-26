@@ -153,7 +153,7 @@ I decided to push the model a little further and I chose thirteen differnt image
 ![alt text][image11] ![alt text][image12] ![alt text][image13]
 ![alt text][image14]
 
-The first image might be difficult to classify because ...
+Note that, particurlaly images 3, 5, 8 and 13 might be difficult to classify. Image 3 (pedestrians) has a very peculiar shape that can be confused with many other different signs (turn left ahead, roundabouts, etc...). Image 5 (no entry) is very rough on the edges and has a blue background that might confuse the model. Image 8 (80) can be easily consuded with the sign "30", especially if you consider the shadow that is contained on the image. Finally, image 13 (120), although very clear, I was curious if the model would be able to correctly identify it as "120" and not "20".
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
