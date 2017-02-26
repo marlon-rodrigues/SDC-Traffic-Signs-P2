@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/pedestrians.png "Visualization"
 [image5]: ./examples/left-aheda.png "Visualization"
 [image6]: ./examples/no-entry.png "Visualization"
-[image7]: ./examples/wild-animals-crossing.png "Visualization"
+[image7]: ./examples/wild-animal-crossing.png "Visualization"
 [image8]: ./examples/prioritary.png "Visualization"
 [image9]: ./examples/80.png "Visualization"
 [image10]: ./examples/yeld.png "Visualization"
