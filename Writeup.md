@@ -195,7 +195,7 @@ For the 1st image, the model is relatively sure that this is a "30 km/h" sign (p
 | 2.87723506e-18				    | 80 km/h      							|
 
 
-For the 2nd image, the model is relatively sure that this is a "Go Straight or Left" sign (probability of 9.99), and the image does contain a "Go Straight or Left" sign. The top five soft max probabilities were
+For the 2nd image, the model is not so sure  that this is a "Go Straight or Left" sign (probability of 9.99999404e-01), but the image does contain a "Go Straight or Left" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -206,7 +206,7 @@ For the 2nd image, the model is relatively sure that this is a "Go Straight or L
 | 2.66175415e-09				    | 70 km/h      							|
 
 
-For the 3rd image, the model is not so sure that this is a "Roundabout" sign (probability of 0.184), but the image does contains a "Pedestrians" sign. The top five soft max probabilities were
+For the 3rd image, the model is not so sure that this is a "Roundabout" sign (probability of 0.184), but the image contains a "Pedestrians" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -216,7 +216,7 @@ For the 3rd image, the model is not so sure that this is a "Roundabout" sign (pr
 | 0.04620901      			| End of all speed and passing limits					 				|
 | 0.04555641				    | Go straight or left      							|
 
-For the 4rd image, the model is relatively sure that this is a "Turn Left Ahead" sign (probability of 9.99), and the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
+For the 4rd image, the model is not so sure  that this is a "Turn Left Ahead" sign (probability of 9.99989390e-01), but the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -257,3 +257,14 @@ For the 7th image, the model is relatively sure that this is a "Priority Road" s
 | 0.00000000e+00				| 20 km/h									|
 | 0.00000000e+00      			| 30 km/h					 				|
 | 0.00000000e+00				    | 50 km/h   							|
+
+
+For the 8th image, the model is not so sure that this is a "50 km/h" sign (probability of 9.93587136e-01), but the image contain a "80 km/h". The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.93587136e-01         			| 50 km/h							| 
+| 3.46563011e-03     				| 30 km/h										|
+| 1.51071395e-03				| 80 km/h									|
+| 1.29817508e-03      			| 70 km/h					 				|
+| 1.09184351e-04				    | 100 km/h   							|
