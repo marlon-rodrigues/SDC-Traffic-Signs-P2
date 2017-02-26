@@ -125,9 +125,9 @@ To train the model, I first start a Tensor Flow session, then i initialize all t
 The code for training the model is located in the nineth cell of the ipython notebook. 
 
 My final model results were:
-* training set accuracy of ~100%
+* training set accuracy of ~99.9%
 * validation set accuracy of ~98.5%
-* test set accuracy of 96.6%
+* test set accuracy of 96.4%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
@@ -162,7 +162,7 @@ I decided to push the model a little further and I chose thirteen different imag
 ![alt text][image11] ![alt text][image12] ![alt text][image13]
 ![alt text][image14]
 
-Note that, particurlaly images 3, 5, 8 and 13 might be difficult to classify. Image 3 (pedestrians) has a very peculiar shape that can be confused with many other different signs (turn left ahead, roundabouts, etc...). Image 5 (no entry) is very rough on the edges and has a blue background that might confuse the model. Image 8 (80 km/h) can be easily consuded with the sign "30 km/h", especially if you consider the shadow that is contained on the image. Finally, image 13 (120 km/h), although very clear, I was curious if the model would be able to correctly identify it as "120 km/h" and not "20 km/h".
+Note that, particurlaly images 3, 5, 8 and 13 might be difficult to classify. Image 3 (pedestrians) has a very peculiar/busy shape that can be confused with many other different signs (turn left ahead, roundabouts, etc...). Image 5 (no entry) is very rough on the edges and has a blue background that might confuse the model. Image 8 (80 km/h) can be easily confused with the sign "30 km/h", especially if you consider the shadow that is contained on the image. Finally, image 13 (120 km/h), although very clear, I was curious if the model would be able to correctly identify it as "120 km/h" and not "20 km/h".
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -174,12 +174,12 @@ Here are the results of the prediction:
 |:---------------------:|:---------------------------------------------:| 
 | 30 km/h      		| 30 km/h  									| 
 | Go Straight or Left    			| Go Straight or Left 										|
-| Pedestrians					| Roundabout mandatory											|
+| Pedestrians					| General caution											|
 | Turn Left Ahead	      		| Turn Left Ahead					 				|
 | No Entry			| No Entry      							|
 | Wild Animals Crossing			| Wild Animals Crossing      							|
 | Priority Road			| Priority Road      							|
-| 80 km/h			| 50 km/h      							|
+| 80 km/h			| 30 km/h      							|
 | Yeld			| Yeld      							|
 | No Passing			| No Passing      							|
 | Turn Right Ahead			| Turn Right Ahead      							|
@@ -187,7 +187,7 @@ Here are the results of the prediction:
 | 120 km/h			| 120 km/h      							|
 
 
-The model was able to correctly guess 11 of the 13 traffic signs, which gives an accuracy of 84.6%. This compares favorably to the accuracy on the test set of 96.6%.
+The model was able to correctly guess 11 of the 13 traffic signs, which gives an accuracy of 84.6%. This compares favorably to the accuracy on the test set of 96.4%.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -198,43 +198,43 @@ For the 1st image, the model is relatively sure that this is a "30 km/h" sign (p
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| 30 km/h									| 
-| 7.05081343e-17     				| 120 km/h 										|
-| 5.96814981e-17				| 70 km/h											|
-| 5.25805794e-18      			| 20 km/h					 				|
-| 2.87723506e-18				    | 80 km/h      							|
+| 1.30016888e-13     				| 80 km/h 										|
+| 1.20461108e-16				| 70 km/h											|
+| 8.47939615e-20      			| 50 km/h					 				|
+| 5.84411130e-22				    | 100 km/h      							|
 
 
-For the 2nd image, the model is not so sure  that this is a "Go Straight or Left" sign (probability of 9.99999404e-01), but the image does contain a "Go Straight or Left" sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 9.99999404e-01         			| Go Straight or Left									| 
-| 4.96129644e-07     				| Roundabout mandatory 										|
-| 1.14460541e-07				| General caution										|
-| 5.29687316e-09      			| Traffic signals					 				|
-| 2.66175415e-09				    | 70 km/h      							|
-
-
-For the 3rd image, the model is not so sure that this is a "Roundabout" sign (probability of 0.184), but the image contains a "Pedestrians" sign. The top five soft max probabilities were
+For the 2nd image, the model is relatively sure  that this is a "Go Straight or Left" sign (probability of 1.0), and the image does contain a "Go Straight or Left" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.18497877         			| Roundabout mandatory									| 
-| 0.12243532     				| Traffic signals 										|
-| 0.09847075 				| 20 km/h										|
-| 0.04620901      			| End of all speed and passing limits					 				|
-| 0.04555641				    | Go straight or left      							|
+| 1.00000000e+00         			| Go Straight or Left									| 
+| 8.24804071e-19     				| Slippery road 										|
+| 6.15190765e-20				| Wild animals crossing										|
+| 1.42098411e-21      			| Double curve					 				|
+| 1.00843606e-21				    | Traffic signals      							|
 
 
-For the 4rd image, the model is not so sure  that this is a "Turn Left Ahead" sign (probability of 9.99989390e-01), but the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
+For the 3rd image, the model is relatively sure that this is a "General caution" (probability of 1.0), but the image contains a "Pedestrians" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 9.99989390e-01         			| Turn Left Ahead								| 
-| 5.77493120e-06     				| Ahead only 										|
-| 1.44424644e-06				| No passing									|
-| 1.02168235e-06      			| End of no passing by vehicles over 3.5 metric tons					 				|
-| 6.87790703e-07				    | 120 km/h      							|
+| 1.00000000e+00         			| General caution									| 
+| 1.06048166e-08     				| Traffic signals 										|
+| 4.52109988e-10 				| Pedestrians										|
+| 3.10435344e-10      			| Right-of-way at the next intersection					 				|
+| 2.10107154e-10				    | 30 km/h      							|
+
+
+For the 4rd image, the model is relatively sure  that this is a "Turn Left Ahead" sign (probability of 1.0), and the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| Turn Left Ahead								| 
+| 5.24670405e-08     				| Ahead only 										|
+| 5.35328393e-10				| Vehicles over 3.5 metric tons prohibited									|
+| 6.99936550e-12      			| No passing					 				|
+| 3.79658631e-12				    | Right-of-way at the next intersection      							|
 
 
 For the 5th image, the model is relatively sure that this is a "No Entry" sign (probability of 1.0), and the image does contain a "No Entry" sign. The top five soft max probabilities were
@@ -242,10 +242,10 @@ For the 5th image, the model is relatively sure that this is a "No Entry" sign (
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| No Entry							| 
-| 8.30872795e-21     				| Priority road 										|
-| 8.06210130e-21				| Roundabout mandatory									|
-| 6.12447941e-23      			| No passing for vehicles over 3.5 metric tons					 				|
-| 5.98182693e-24				    | Turn left ahead     							|
+| 1.56649855e-34     				| End of no passing 										|
+| 6.47546490e-35				| No passing									|
+| 1.08045100e-35      			| Beware of ice/snow					 				|
+| 4.44157678e-36				    | Turn right ahead     							|
 
 
 For the 6th image, the model is relatively sure that this is a "Wild Animals Crossing" sign (probability of 1.0), and the image does contain a "Wild Animals Crossing" sign. The top five soft max probabilities were
@@ -253,10 +253,10 @@ For the 6th image, the model is relatively sure that this is a "Wild Animals Cro
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| Wild Animals Crossing							| 
-| 1.03473810e-24     				| Double curve 										|
-| 9.45632318e-25				| Slippery road									|
-| 1.12905431e-29      			| Yield					 				|
-| 6.10348347e-32				    | Dangerous curve to the left   							|
+| 9.58352213e-13     				| Slippery road 										|
+| 9.75562472e-14				| Go straight or left									|
+| 1.02572403e-14      			| Double curve					 				|
+| 4.69143068e-16				    | General caution   							|
 
 
 For the 7th image, the model is relatively sure that this is a "Priority Road" sign (probability of 1.0), and the image does contain a "Priority Road" sign. The top five soft max probabilities were
