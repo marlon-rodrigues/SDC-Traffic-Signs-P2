@@ -126,7 +126,7 @@ The code for training the model is located in the nineth cell of the ipython not
 
 My final model results were:
 * training set accuracy of ~100%
-* validation set accuracy of ~99%
+* validation set accuracy of ~98.5%
 * test set accuracy of 96.6%
 
 If an iterative approach was chosen:
