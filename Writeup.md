@@ -18,6 +18,19 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/processed-image.png "Visualization"
+[image2]: ./examples/30.png "Visualization"
+[image3]: ./examples/straight-or-left.png "Visualization"
+[image4]: ./examples/pedestrians.png "Visualization"
+[image5]: ./examples/left-ahead.png "Visualization"
+[image6]: ./examples/no-entry.png "Visualization"
+[image7]: ./examples/wild-animals-crossing.png "Visualization"
+[image8]: ./examples/prioritary.png "Visualization"
+[image9]: ./examples/80.png "Visualization"
+[image10]: ./examples/yeld.png "Visualization"
+[image11]: ./examples/no-passing.png "Visualization"
+[image12]: ./examples/right-ahead.png "Visualization"
+[image13]: ./examples/70.png "Visualization"
+[image14]: ./examples/120.png "Visualization"
 
 
 ## Rubric Points
@@ -132,10 +145,13 @@ I believe the most important design choices for this model are the use of convol
 
 ####1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+I decided to push the model a little further and I chose thirteen differnt images to test on it. Here are thirteen German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image2] ![alt text][image3] ![alt text][image4] 
+![alt text][image5] ![alt text][image6] ![alt text][image7]
+![alt text][image8] ![alt text][image9] ![alt text][image10]
+![alt text][image11] ![alt text][image12] ![alt text][image13]
+![alt text][image14]
 
 The first image might be difficult to classify because ...
 
