@@ -131,14 +131,23 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
 I simply replicated the LeNet architecture. I chose the LeNet because is very simple and it seemed very powerful based on the exercises we did in class.
+
 * What were some problems with the initial architecture?
+
 Although it worked pretty well, I wasn't satisfied with the accuracy rate (~93%). 
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 I first added a few more convolution layers. The results improved but were still unsatisfactory. I then added dropout layers within my model in different positions until I found a position that seemed to work the best. For example, at first I added a dropout layer right after the first convolution layer, which proved very unsuccessful, as my accuracy rate dropped considerably.  
+
 * Which parameters were tuned? How were they adjusted and why?
+
 I mainly focused on 2 parameters: learning rate and keep_prob - for dropout. After playting around with those 2 parameters for a while I came to the solution which I believe behaves the best with my model.
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 I believe the most important design choices for this model are the use of convolution layers, dropouts and pooling. With the convolution layers I'm able to extract different features of the image using a pre-determined filter, which will allow the model to focus on those different features when classifying an image. Dropout layers prevents the model from overfitting - thus why I have one dropout layer within my convolution layers and another one within my fully connected layers. Finally, pooling (in this case, max pooling) helps my model focus on the most important features found in the image, which at the end it will be the ones helping the module classify an image correctly.
 
 ###Test a Model on New Images
