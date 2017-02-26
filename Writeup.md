@@ -225,3 +225,35 @@ For the 4rd image, the model is relatively sure that this is a "Turn Left Ahead"
 | 1.44424644e-06				| No passing									|
 | 1.02168235e-06      			| End of no passing by vehicles over 3.5 metric tons					 				|
 | 6.87790703e-07				    | 120 km/h      							|
+
+
+For the 5th image, the model is relatively sure that this is a "No Entry" sign (probability of 1.0), and the image does contain a "No Entry" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| No Entry							| 
+| 8.30872795e-21     				| Priority road 										|
+| 8.06210130e-21				| Roundabout mandatory									|
+| 6.12447941e-23      			| No passing for vehicles over 3.5 metric tons					 				|
+| 5.98182693e-24				    | Turn left ahead     							|
+
+For the 6th image, the model is relatively sure that this is a "Wild Animals Crossing" sign (probability of 1.0), and the image does contain a "Wild Animals Crossing". The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| Wild Animals Crossing							| 
+| 1.03473810e-24     				| Double curve 										|
+| 9.45632318e-25				| Slippery road									|
+| 1.12905431e-29      			| Yield					 				|
+| 6.10348347e-32				    | Dangerous curve to the left   							|
+
+
+For the 7th image, the model is relatively sure that this is a "Priority Road" sign (probability of 1.0), and the image does contain a "Priority Road". The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| Priority Road							| 
+| 9.43141362e-36     				| Yield 										|
+| 0.00000000e+00				| 20 km/h									|
+| 0.00000000e+00      			| 30 km/h					 				|
+| 0.00000000e+00				    | 50 km/h   							|
