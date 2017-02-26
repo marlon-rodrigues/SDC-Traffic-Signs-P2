@@ -17,11 +17,11 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/processed-image.png "Visualization"
+[image1]: ./examples/processing-image.png "Visualization"
 [image2]: ./examples/30.png "Visualization"
 [image3]: ./examples/straight-or-left.png "Visualization"
 [image4]: ./examples/pedestrians.png "Visualization"
-[image5]: ./examples/left-ahead.png "Visualization"
+[image5]: ./examples/left-aheda.png "Visualization"
 [image6]: ./examples/no-entry.png "Visualization"
 [image7]: ./examples/wild-animals-crossing.png "Visualization"
 [image8]: ./examples/prioritary.png "Visualization"
