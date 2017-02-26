@@ -264,32 +264,32 @@ For the 7th image, the model is relatively sure that this is a "Priority Road" s
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| Priority Road							| 
-| 9.43141362e-36     				| Yield 										|
-| 0.00000000e+00				| 20 km/h									|
-| 0.00000000e+00      			| 30 km/h					 				|
-| 0.00000000e+00				    | 50 km/h   							|
+| 8.60659574e-26     				| Ahead only										|
+| 1.22579840e-26				| Beware of ice/snow									|
+| 6.57658700e-27      			| End of all speed and passing limits					 				|
+| 4.18353931e-27				    | Roundabout mandatory   							|
 
 
-For the 8th image, the model is not so sure that this is a "50 km/h" sign (probability of 9.93587136e-01), but the image contain a "80 km/h" sign. The top five soft max probabilities were
+For the 8th image, the model is not so sure that this is a "30 km/h" sign (probability of 0.53), but the image contains a "80 km/h" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 9.93587136e-01         			| 50 km/h							| 
-| 3.46563011e-03     				| 30 km/h										|
-| 1.51071395e-03				| 80 km/h									|
-| 1.29817508e-03      			| 70 km/h					 				|
-| 1.09184351e-04				    | 100 km/h   							|
+| 0.53803265         			| 30 km/h							| 
+| 0.21471526     				| 70 km/h										|
+| 0.12579013				| 80 km/h									|
+| 0.02673963      			| 50 km/h					 				|
+| 0.01047549				    | End of speed limit (80 km/h)   							|
 
 
 For the 9th image, the model is very sure that this is a "Yield" sign (probability of 1.0), and the image does contain a "Yeld" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 1.0         			| Yeld							| 
-| 0     				| 20 km/h										|
-| 0				| 30 km/h									|
-| 0     			| 50 km/h					 				|
-| 0				    | 60 km/h   							|
+| 1.00000000e+00         			| Yeld							| 
+| 1.53821027e-35     				| Priority road										|
+| 0				| 20 km/h									|
+| 0     			| 30 km/h					 				|
+| 0				    | 50 km/h   							|
 
 
 For the 10th image, the model is relatively sure that this is a "No Passing" sign (probability of 1.0), and the image does contain a "No Passing" sign. The top five soft max probabilities were
@@ -297,40 +297,40 @@ For the 10th image, the model is relatively sure that this is a "No Passing" sig
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 1.00000000e+00         			| No Passing							| 
-| 1.40609679e-09     				| No vehicles										|
-| 4.21126023e-10				| Ahead only								|
-| 2.79581046e-11      			| Vehicles over 3.5 metric tons prohibited					 				|
-| 1.26290150e-11				    | No passing for vehicles over 3.5 metric tons   							|
+| 2.55352510e-12     				| Vehicles over 3.5 metric tons prohibited										|
+| 6.86930845e-14				| Slippery road								|
+| 4.50983448e-14      			| No passing for vehicles over 3.5 metric tons					 				|
+| 1.40461627e-14				    | 60 km/h   							|
 
 
-For the 11th image, the model is very sure that this is a "Turn Right Ahead" sign (probability of 1.0), and the image does contain a "Turn Right Ahead" sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| 1.0         			| Turn Right Ahead							| 
-| 0     				| 20 km/h										|
-| 0				| 30 km/h									|
-| 0     			| 50 km/h					 				|
-| 0				    | 60 km/h   							|
-
-
-For the 12th image, the model is not so sure  that this is a "70 km/h" sign (probability of 9.99993682e-01), but the image does contain a "70 km/h" sign. The top five soft max probabilities were
+For the 11th image, the model is relatively sure that this is a "Turn Right Ahead" sign (probability of 1.0), and the image does contain a "Turn Right Ahead" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 9.99993682e-01         			| 70 km/h							| 
-| 3.76005823e-06     				| 30 km/h 										|
-| 1.57752686e-06				| 20 km/h									|
-| 6.73609179e-07      			| 120 km/h					 				|
-| 1.52378234e-07				    | 80 km/h      							|
+| 1.00000000e+00         			| Turn Right Ahead							| 
+| 5.94162966e-28     				| No passing for vehicles over 3.5 metric tons										|
+| 4.84925038e-28				| Stop									|
+| 2.81130547e-31     			| No entry					 				|
+| 1.47723258e-31				    | Right-of-way at the next intersection   							|
 
 
-For the 13th image, the model is not so sure  that this is a "120 km/h" sign (probability of 9.91708457e-01), but the image does contain a "120 km/h" sign. The top five soft max probabilities were
+For the 12th image, the model is relatively sure  that this is a "70 km/h" sign (probability of 1.0), and the image does contain a "70 km/h" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 9.91708457e-01         			| 120 km/h							| 
-| 5.52987820e-03     				| 20 km/h 										|
-| 1.24148233e-03				| Bicycles crossing									|
-| 6.14862889e-04      			| 100 km/h					 				|
-| 4.73920052e-04				    | 70 km/h      							|
+| 1.00000000e+00         			| 70 km/h							| 
+| 2.33441306e-20     				| 120 km/h 										|
+| 1.47867873e-20				| 50 km/h									|
+| 1.12563570e-21      			| 30 km/h					 				|
+| 1.81802425e-25				    | 100 km/h      							|
+
+
+For the 13th image, the model is not so sure  that this is a "120 km/h" sign (probability of 9.99960899e-01), but the image does contain a "120 km/h" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.99960899e-01         			| 120 km/h							| 
+| 3.90443201e-05     				| 100 km/h 										|
+| 1.11779430e-08				| 70 km/h									|
+| 6.62388766e-09      			| 20 km/h					 				|
+| 2.24041630e-09				    | 30 km/h      							|
