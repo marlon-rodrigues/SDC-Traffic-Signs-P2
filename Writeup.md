@@ -237,7 +237,7 @@ For the 5th image, the model is relatively sure that this is a "No Entry" sign (
 | 6.12447941e-23      			| No passing for vehicles over 3.5 metric tons					 				|
 | 5.98182693e-24				    | Turn left ahead     							|
 
-For the 6th image, the model is relatively sure that this is a "Wild Animals Crossing" sign (probability of 1.0), and the image does contain a "Wild Animals Crossing". The top five soft max probabilities were
+For the 6th image, the model is relatively sure that this is a "Wild Animals Crossing" sign (probability of 1.0), and the image does contain a "Wild Animals Crossing" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -248,7 +248,7 @@ For the 6th image, the model is relatively sure that this is a "Wild Animals Cro
 | 6.10348347e-32				    | Dangerous curve to the left   							|
 
 
-For the 7th image, the model is relatively sure that this is a "Priority Road" sign (probability of 1.0), and the image does contain a "Priority Road". The top five soft max probabilities were
+For the 7th image, the model is relatively sure that this is a "Priority Road" sign (probability of 1.0), and the image does contain a "Priority Road" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -259,7 +259,7 @@ For the 7th image, the model is relatively sure that this is a "Priority Road" s
 | 0.00000000e+00				    | 50 km/h   							|
 
 
-For the 8th image, the model is not so sure that this is a "50 km/h" sign (probability of 9.93587136e-01), but the image contain a "80 km/h". The top five soft max probabilities were
+For the 8th image, the model is not so sure that this is a "50 km/h" sign (probability of 9.93587136e-01), but the image contain a "80 km/h" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -268,3 +268,45 @@ For the 8th image, the model is not so sure that this is a "50 km/h" sign (proba
 | 1.51071395e-03				| 80 km/h									|
 | 1.29817508e-03      			| 70 km/h					 				|
 | 1.09184351e-04				    | 100 km/h   							|
+
+
+For the 9th image, the model is very sure that this is a "Yield" sign (probability of 1.0), and the image does contain a "Yeld" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Yeld							| 
+| 0     				| 20 km/h										|
+| 0				| 30 km/h									|
+| 0     			| 50 km/h					 				|
+| 0				    | 60 km/h   							|
+
+For the 10th image, the model is relatively sure that this is a "No Passing" sign (probability of 1.0), and the image does contain a "No Passing" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.00000000e+00         			| No Passing							| 
+| 1.40609679e-09     				| No vehicles										|
+| 4.21126023e-10				| Ahead only								|
+| 2.79581046e-11      			| Vehicles over 3.5 metric tons prohibited					 				|
+| 1.26290150e-11				    | No passing for vehicles over 3.5 metric tons   							|
+
+
+For the 11th image, the model is very sure that this is a "Turn Right Ahead" sign (probability of 1.0), and the image does contain a "Turn Right Ahead" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 1.0         			| Turn Right Ahead							| 
+| 0     				| 20 km/h										|
+| 0				| 30 km/h									|
+| 0     			| 50 km/h					 				|
+| 0				    | 60 km/h   							|
+
+For the 12th image, the model is not so sure  that this is a "70 km/h" sign (probability of 9.99993682e-01), but the image does contain a "70 km/h" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.99993682e-01         			| 70 km/h							| 
+| 3.76005823e-06     				| 30 km/h 										|
+| 1.57752686e-06				| 20 km/h									|
+| 6.73609179e-07      			| 120 km/h					 				|
+| 1.52378234e-07				    | 80 km/h      							|
