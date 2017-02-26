@@ -3,7 +3,7 @@
 
 Overview
 ---
-In this project, you I used what I've learned about deep neural networks and convolutional neural networks to classify traffic signs. trained and validated a model so it could classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model was trained, I tried out the model on images of German traffic signs that I found on the web.
+In this project, I used what I've learned about deep neural networks and convolutional neural networks to classify traffic signs. trained and validated a model so it could classify traffic sign images using the [German Traffic Sign Dataset](http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset). After the model was trained, I tried out the model on images of German traffic signs that I found on the web.
 
 The Project
 ---
