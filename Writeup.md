@@ -165,12 +165,12 @@ Here are the results of the prediction:
 |:---------------------:|:---------------------------------------------:| 
 | 30 km/h      		| 30 km/h  									| 
 | Go Straight or Left    			| Go Straight or Left 										|
-| Pedestrians					| ?											|
+| Pedestrians					| Roundabout mandatory											|
 | Turn Left Ahead	      		| Turn Left Ahead					 				|
 | No Entry			| No Entry      							|
 | Wild Animals Crossing			| Wild Animals Crossing      							|
 | Priority Road			| Priority Road      							|
-| 80 km/h			| 30 km/h      							|
+| 80 km/h			| 50 km/h      							|
 | Yeld			| Yeld      							|
 | No Passing			| No Passing      							|
 | Turn Right Ahead			| Turn Right Ahead      							|
@@ -184,15 +184,44 @@ The model was able to correctly guess 11 of the 13 traffic signs, which gives an
 
 The code for making predictions on my final model is located in the 14th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the 1st image, the model is relatively sure that this is a "30 km/h" sign (probability of 1.0), and the image does contain a "30 km/h" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 1.00000000e+00         			| 30 km/h									| 
+| 7.05081343e-17     				| 120 km/h 										|
+| 5.96814981e-17				| 70 km/h											|
+| 5.25805794e-18      			| 20 km/h					 				|
+| 2.87723506e-18				    | 80 km/h      							|
 
 
-For the second image ... 
+For the 2nd image, the model is relatively sure that this is a "Go Straight or Left" sign (probability of 9.99), and the image does contain a "Go Straight or Left" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.99999404e-01         			| Go Straight or Left									| 
+| 4.96129644e-07     				| Roundabout mandatory 										|
+| 1.14460541e-07				| General caution										|
+| 5.29687316e-09      			| Traffic signals					 				|
+| 2.66175415e-09				    | 70 km/h      							|
+
+
+For the 3rd image, the model is not so sure that this is a "Roundabout" sign (probability of 0.184), but the image does contains a "Pedestrians" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.18497877         			| Roundabout mandatory									| 
+| 0.12243532     				| Traffic signals 										|
+| 0.09847075 				| 20 km/h										|
+| 0.04620901      			| End of all speed and passing limits					 				|
+| 0.04555641				    | Go straight or left      							|
+
+For the 4rd image, the model is relatively sure that this is a "Turn Left Ahead" sign (probability of 9.99), and the image does contain a "Turn Left Ahead" sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 9.99989390e-01         			| Turn Left Ahead								| 
+| 5.77493120e-06     				| Ahead only 										|
+| 1.44424644e-06				| No passing									|
+| 1.02168235e-06      			| End of no passing by vehicles over 3.5 metric tons					 				|
+| 6.87790703e-07				    | 120 km/h      							|
