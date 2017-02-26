@@ -103,31 +103,30 @@ My final model consisted of the following layers:
 
 ####4. Describe how, and identify where in your code, you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-The code for training the model is located in the eigth cell of the ipython notebook. 
+The code for training the model is located in the seventh, eight and nineth cells of the ipython notebook. 
 
-To train the model, I used an ....
+To train the model, I first start a Tensor Flow session, then i initialize all the variables and calculate the number of images in the training set. I loop through my epochs, which is set to 50, suffle my training set and run my training operation - which consists of an optimizer of the loss operation of the softmax cross entrophy function ran across all the images in the test set. I then evaluate both the accuracy of the training and the validation set by checking the prediction of the model against the correct label.
 
 ####5. Describe the approach taken for finding a solution. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
-The code for calculating the accuracy of the model is located in the ninth cell of the Ipython notebook.
+The code for training the model is located in the nineth cell of the ipython notebook. 
 
 My final model results were:
-* training set accuracy of ?
-* validation set accuracy of ? 
-* test set accuracy of ?
+* training set accuracy of ~100%
+* validation set accuracy of ~99%
+* test set accuracy of 96.6%
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+I simply replicated the LeNet architecture. I chose the LeNet because is very simple and it seemed very powerful based on the exercises we did in class.
 * What were some problems with the initial architecture?
+Although it worked pretty well, I wasn't satisfied with the accuracy rate (~93%). 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to over fitting or under fitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+I first added a few more convolution layers. The results improved but were still unsatisfactory. I then added dropout layers within my model in different positions until I found a position that seemed to work the best. For example, at first I added a dropout layer right after the first convolution layer, which proved very unsuccessful, as my accuracy rate dropped considerably.  
 * Which parameters were tuned? How were they adjusted and why?
+I mainly focused on 2 parameters: learning rate and keep_prob - for dropout. After playting around with those 2 parameters for a while I came to the solution which I believe behaves the best with my model.
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
- 
+I believe the most important design choices for this model are the use of convolution layers, dropouts and pooling. With the convolution layers I'm able to extract different features of the image using a pre-determined filter, which will allow the model to focus on those different features when classifying an image. Dropout layers prevents the model from overfitting - thus why I have one dropout layer within my convolution layers and another one within my fully connected layers. Finally, pooling (in this case, max pooling) helps my model focus on the most important features found in the image, which at the end it will be the ones helping the module classify an image correctly.
 
 ###Test a Model on New Images
 
