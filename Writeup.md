@@ -153,28 +153,36 @@ I decided to push the model a little further and I chose thirteen differnt image
 ![alt text][image11] ![alt text][image12] ![alt text][image13]
 ![alt text][image14]
 
-Note that, particurlaly images 3, 5, 8 and 13 might be difficult to classify. Image 3 (pedestrians) has a very peculiar shape that can be confused with many other different signs (turn left ahead, roundabouts, etc...). Image 5 (no entry) is very rough on the edges and has a blue background that might confuse the model. Image 8 (80) can be easily consuded with the sign "30", especially if you consider the shadow that is contained on the image. Finally, image 13 (120), although very clear, I was curious if the model would be able to correctly identify it as "120" and not "20".
+Note that, particurlaly images 3, 5, 8 and 13 might be difficult to classify. Image 3 (pedestrians) has a very peculiar shape that can be confused with many other different signs (turn left ahead, roundabouts, etc...). Image 5 (no entry) is very rough on the edges and has a blue background that might confuse the model. Image 8 (80 km/h) can be easily consuded with the sign "30 km/h", especially if you consider the shadow that is contained on the image. Finally, image 13 (120 km/h), although very clear, I was curious if the model would be able to correctly identify it as "120 km/h" and not "20 km/h".
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
-The code for making predictions on my final model is located in the tenth cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 12th cell of the Ipython notebook.
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| 30 km/h      		| 30 km/h  									| 
+| Go Straight or Left    			| Go Straight or Left 										|
+| Pedestrians					| ?											|
+| Turn Left Ahead	      		| Turn Left Ahead					 				|
+| No Entry			| No Entry      							|
+| Wild Animals Crossing			| Wild Animals Crossing      							|
+| Priority Road			| Priority Road      							|
+| 80 km/h			| 30 km/h      							|
+| Yeld			| Yeld      							|
+| No Passing			| No Passing      							|
+| Turn Right Ahead			| Turn Right Ahead      							|
+| 70 km/h			| 70 km/h      							|
+| 120 km/h			| 120 km/h      							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 11 of the 13 traffic signs, which gives an accuracy of 84.6%. This compares favorably to the accuracy on the test set of 96.6%.
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
+The code for making predictions on my final model is located in the 14th cell of the Ipython notebook.
 
 For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
 
