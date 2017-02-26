@@ -148,7 +148,7 @@ I mainly focused on 2 parameters: learning rate and keep_prob - for dropout. Aft
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-I believe the most important design choices for this model are the use of convolution layers, dropouts and pooling. With the convolution layers I'm able to extract different features of the image using a pre-determined filter, which will allow the model to focus on those different features when classifying an image. Dropout layers prevents the model from overfitting - thus why I have one dropout layer within my convolution layers and another one within my fully connected layers. Finally, pooling (in this case, max pooling) helps my model focus on the most important features found in the image, which at the end it will be the ones helping the module classify an image correctly.
+I believe the most important design choices for this model are the use of convolution layers, dropouts and pooling. With the convolution layers I'm able to extract different features of the image using a pre-determined filter, which will allow the model to focus on those different features when classifying an image. Dropout layers prevents the model from overfitting - thus why I have one dropout layer within my convolution layers and another one within my fully connected layers. Finally, pooling (in this case, max pooling) helps my model focus on the most important features found in the image, which at the end it will be the ones helping the model classify an image correctly.
 
 ###Test a Model on New Images
 
