@@ -215,7 +215,7 @@ For the 2nd image, the model is relatively sure  that this is a "Go Straight or 
 | 1.00843606e-21				    | Traffic signals      							|
 
 
-For the 3rd image, the model is relatively sure that this is a "General caution" (probability of 1.0), but the image contains a "Pedestrians" sign. The top five soft max probabilities were
+For the 3rd image, the model is relatively sure that this is a "General caution" sign (probability of 1.0), but the image contains a "Pedestrians" sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
